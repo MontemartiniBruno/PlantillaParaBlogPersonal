@@ -1,0 +1,142 @@
+    body {
+        position: fixed;
+        margin: 0;
+        padding: 0;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        font-family: "Roboto Mono", serif;
+    }
+    
+    a {
+        display: inline;
+        text-decoration: none;
+        color: white;
+    }
+    
+    header {
+        width: 100%;
+        height: 50px;
+        display: grid;
+        grid-template-rows: 1fr 1fr;
+    }
+    
+    header .header-icons-container {
+        width: 100%;
+        height: 50px;
+        background: #47cfac;
+        display: grid;
+    }
+    
+    header .header-icons-container .iconos {
+        width: 300px;
+        height: auto;
+        margin-right: 50px;
+        display: flex;
+        justify-content: space-between;
+        justify-items: flex-end;
+        align-items: center;
+        justify-self: end;
+    }
+    
+    .iconos span {
+        color: white;
+    }
+    
+    nav {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        height: 90px;
+        background: transparent;
+        position: relative;
+        z-index: 2;
+    }
+    
+    nav .nav-logo-container {
+        margin-left: 50px;
+    }
+    
+    nav .nav-logo-container img {
+        width: 220px;
+        margin-top: 10px;
+    }
+    
+    nav .profile-link {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        margin-right: 50px;
+    }
+    
+    nav .profile-link a {
+        font-size: 25px;
+        font-family: "Roboto Mono", serif;
+        border-bottom: 1px solid white;
+        font-weight: 300;
+    }
+    
+    .hero {
+        width: 100%;
+        height: 100vh;
+        color: white;
+        background-image: url("../assest/Imágenes/Cover.png");
+        background-repeat: no-repeat;
+        object-fit: cover;
+        background-size: cover;
+        background-position-y: -90px;
+    }
+    
+    .hero-title {
+        font-size: 55px;
+        font-family: "Roboto Mono", serif;
+        font-weight: 600;
+        letter-spacing: 5px;
+    }
+    
+    .hero-button {
+        height: 60px;
+        width: 140px;
+        background-color: #47cfac;
+        color: black;
+        font-family: "Roboto Mono", serif;
+        font-weight: 600;
+        font-size: 20px;
+        border: none;
+        justify-self: center;
+        cursor: pointer;
+    }
+    
+    .contenido {
+        height: 75vh;
+        display: grid;
+        justify-content: center;
+        align-content: center;
+        text-align: center;
+    }
+    
+    @media screen and (max-width: 1440px) {
+        body {
+            background-color: black;
+        }
+    }
+    
+    @media screen and (max-width: 1024px) {
+        .hero {
+            margin: auto;
+            background-size: cover;
+            background-position-x: -80px;
+            height: 100vh;
+        }
+        body {
+            background: rgba(0, 0, 0, .9);
+        }
+    }
+    
+    @media screen and (max-width: 768px) {}
+    
+    @media screen and (max-width: 425px) {}
+    
+    @media screen and (max-width: 375px) {}
+    
+    @media screen and (max-width: 320px) {}
